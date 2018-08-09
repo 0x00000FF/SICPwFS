@@ -28,7 +28,7 @@ let _rational       = 3N
 let _rational_neg   = -3N
 
 // Char and String is same as C#.
-// String has unicode characters, and 20bytes overhead. 2 bytes of memory is allocated for each characters. 
+// String has unicode characters, and 20bytes overhead. 2 bytes of memory is allocated for each character. 
 let _char           = 'A'
 let _string         = "Hello!"
 
