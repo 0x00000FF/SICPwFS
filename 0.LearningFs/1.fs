@@ -16,7 +16,7 @@ let _unsigned_int64 = 3UL
 let _bigint         = 3I
 
 // For 32bit floating point data types, add suffix F
-let _float_32       = 1.2F
+let _float_32       = 1.2f
 let _float_64       = 1.2     // Double in other language, but in F#, it is called just "float".
 
 // Decimal (128bit), Rational (at least 32bit)
