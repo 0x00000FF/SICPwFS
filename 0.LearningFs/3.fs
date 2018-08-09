@@ -52,7 +52,13 @@ let whiledo arg =
   let mutable _arg = arg
   while ( _arg <> 0 ) do
     printfn "arg is not zero!! retrying..."
-    _arg <- _arg - 1
+    
+    // check _arg is negative or not
+    if _arg < 0 then 
+      _arg <- _arg + 1
+    else
+      _arg <- _arg - 1
+      
   printfn "OKAY!"
 
 whiledo 3 // prints OKAY after 3 times of retry
