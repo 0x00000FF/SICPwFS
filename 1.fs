@@ -48,17 +48,17 @@
 // 1.3
 // has many flaws, need to be revised
 let exp_and_add x y z =
-  if x > y then
+  if (x > y && x > z) then
     if y > z then
       x ** y + z
     else
       x ** z + y
-  elif y > x then
+  elif (y > x && y > z) then
     if x > z then
       y ** x + z
     else
       y ** z + x
-  elif z > x then
+  elif (z > x && z > y) then
     if x > y then
       z ** x + y
     else
