@@ -45,3 +45,44 @@
    ----
 *)
 
+// 1.3
+// has many flaws, need to be revised
+let exp_and_add x y z =
+  if x > y then
+    if y > z then
+      x ** y + z
+    else
+      x ** z + y
+  elif y > x then
+    if x > z then
+      y ** x + z
+    else
+      y ** z + x
+  elif z > x then
+    if x > y then
+      z ** x + y
+    else
+      z ** y + x
+      
+(*
+
+1.4
+  for the procedure
+    (define (a-plus-abs-b a b)
+      ((if (< b 0) + -) a b))
+  
+  let the arguments a=3, b=4. then
+  
+  (a-plus-abs-b 3 4)
+  
+  b is positive, so the operator should be +, therefore the procedure will return 7.
+  
+  In other case, let a=4, b=-1. then
+  
+  (a-plus-abs-b 4 -1)
+  
+  b is negative, so the operator should be -, therefore the procedure will return 5.
+
+*)
+
+
